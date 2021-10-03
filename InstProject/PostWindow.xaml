@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="InstProject.PostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Height="477" Width="1072.5"  Background="#FFEEEEEE">
+    <Grid HorizontalAlignment="Left" Height="479" Margin="1,-3,0,0" VerticalAlignment="Top" Width="1071">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1041*"/>
+            <ColumnDefinition Width="23*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid.Background>
+            <RadialGradientBrush RadiusX="-3">
+                <GradientStop Color="#FFFDB210" Offset="0"/>
+                <GradientStop Color="#FF155E5A" Offset="0.915"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <StackPanel Background="Bisque" VerticalAlignment="Center" Margin="314,166,195.5,188" Height="102">
+            <Label  x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="21,5,20.5,5"  FontSize="22"/>
+        </StackPanel>
+        <Button Width="75" Height="36" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="272,0,693.5,175"  Click="PreviousPost">
+
+            <materialDesign:PackIcon Kind="ArrowLeft" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
+        </Button>
+        <Button Width="78" Height="34" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="816,0,146.5,174" Click="NextPost">
+            <materialDesign:PackIcon Kind="ArrowRight" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
+        </Button>
+        <Button Width="95" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="276,0,669,108"    x:Name="btnDislike" Click="AmountOfDislikes" Height="46">
+            <materialDesign:PackIcon Kind="DislikeOutline" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
+        </Button>
+        <Button Width="62" Height="39" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="540,0,446,68"  Click="WhoComment">
+            <materialDesign:PackIcon Kind="QuestionMarkBox" RenderTransformOrigin="0.5,0.5" Height="30" Width="28" />
+        </Button>
+        <Button Width="91" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="474,0,483,112"   x:Name="btnComment" Click="AddComment" Height="41">
+            <materialDesign:PackIcon Kind="CommentAdd" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
+        </Button>
+        <Button Width="62" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="330,0,648.5,58"  Click="WhoDislike">
+            <materialDesign:PackIcon Kind="QuestionMarkBox" RenderTransformOrigin="0.5,0.5" Height="32" Width="34" />
+        </Button>
+        <Button Width="62" Height="39" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="147,0,831.5,59"  Click="WhoLike">
+
+
+            <materialDesign:PackIcon Kind="QuestionMarkBox" RenderTransformOrigin="0.721,0.672" Height="32" Width="34" />
+        </Button>
+        <TextBox x:Name="textLike" FontSize="22" Height="44" Margin="146,330,796,0" TextWrapping="Wrap"  TextAlignment="Center" VerticalAlignment="Top" Background="#FF673AB7" RenderTransformOrigin="0.555,0.437" />
+
+
+
+        <TextBox HorizontalAlignment="Left" x:Name="textDisLike" FontSize="22" Height="46" Margin="372,325,0,0" TextWrapping="Wrap"  TextAlignment="Center" VerticalAlignment="Top" Width="62" Background="#FF673AB7" RenderTransformOrigin="0.466,0.446"/>
+
+
+
+        <Button VerticalAlignment="Bottom" Margin="80,0,878,105"  x:Name="btnLike" Click="AmountOfLikes" Height="45">
+            <materialDesign:PackIcon Kind="heart" RenderTransformOrigin="0.685,0.5" Height="29" Width="34" HorizontalAlignment="Left" >
+                <materialDesign:PackIcon.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.122"/>
+                        <TranslateTransform Y="0.009"/>
+                    </TransformGroup>
+                </materialDesign:PackIcon.RenderTransform>
+
+            </materialDesign:PackIcon>
+
+        </Button>
+        <Button VerticalAlignment="Bottom" Margin="242,0,715,289"   x:Name="btnPerson" Click="Person" Height="44" RenderTransformOrigin="0.434,0.385">
+            <materialDesign:PackIcon Kind="Person" RenderTransformOrigin="0.722,0.534" Height="29" Width="63" />
+        </Button>
+
+    </Grid>
+</UserControl>

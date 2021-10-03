@@ -1,0 +1,34 @@
+﻿<Window x:Class="InstProject.AddPostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        AllowsTransparency="True" 
+        Background="Transparent" 
+     
+        Title="Login" Height="500" Width="350" 
+        ResizeMode="NoResize" 
+     
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" >
+      
+
+    <Grid Margin="1,0,2,-2">
+
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFDB210" Offset="0"/>
+                <GradientStop Color="#FF155E5A" Offset="0.915"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="92,0,92.4,44" Content="ADD"  Click="ADD"/>
+      <TextBox Name="Text" Margin="20,60,20,120" materialDesign:HintAssist.Hint="            Text of you post"  AcceptsReturn="True" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="22" />
+        <Button Content="CLOSE" HorizontalAlignment="Left" Margin="16,7,0,0" VerticalAlignment="Top" Width="75" Click="CLOSE"/>
+       
+    </Grid>
+
+</Window>

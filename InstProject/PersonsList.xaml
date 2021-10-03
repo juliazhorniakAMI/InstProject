@@ -1,0 +1,34 @@
+﻿<Window x:Class="InstProject.PersonsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstProject"
+        mc:Ignorable="d"
+        AllowsTransparency="True" 
+        Background="Transparent" 
+     
+        Height="500" Width="350" 
+        ResizeMode="NoResize" 
+     
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+
+        Title="PersonsList">
+    <Grid Margin="5,-4,1,4" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="383*"/>
+            <ColumnDefinition Width="384*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <RadialGradientBrush RadiusX="-3">
+                <GradientStop Color="#FFFDB210" Offset="0"/>
+                <GradientStop Color="#FF155E5A" Offset="0.915"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Button Content="CLOSE" HorizontalAlignment="Left" Margin="16,7,0,0" VerticalAlignment="Top" Width="75" Click="CLOSE"/>
+        <ListBox x:Name="People" HorizontalAlignment="Left" Height="421" Margin="164,120,0,0" VerticalAlignment="Top" Width="640" Grid.ColumnSpan="2"  SelectionChanged="SelectionChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="130,50,0,0" TextWrapping="Wrap" Text="People:" VerticalAlignment="Top" Width="102"  FontWeight="Bold" FontSize="22" FontFamily="Verdana" Foreground="#FF15BF2C" BorderThickness="1,0,0,1" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

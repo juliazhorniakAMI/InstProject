@@ -1,0 +1,84 @@
+﻿<Window x:Class="InstProject.ListOfCommentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        AllowsTransparency="True" 
+        Background="Transparent" 
+     
+        Height="500" Width="350" 
+        ResizeMode="NoResize" 
+     
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        Title="ListOfCommentsWindow" >
+    <Grid Margin="3,129,16,10" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="443*"/>
+            <ColumnDefinition Width="414*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <RadialGradientBrush RadiusX="-3">
+                <GradientStop Color="#FFFDB210" Offset="0"/>
+                <GradientStop Color="#FF155E5A" Offset="0.915"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Button Content="CLOSE" HorizontalAlignment="Left" Margin="16,7,0,0" VerticalAlignment="Top" Width="75" Click="CLOSE"/>
+        <StackPanel VerticalAlignment="Center" Margin="31,118,12,145" Height="98" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <Label x:Name="Main"  Height="101" Margin="6,0,2,0" RenderTransformOrigin="0.5,0.5" >
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+                <Label/>
+            </Label>
+
+
+        </StackPanel>
+        <Button  Margin="150,217,117,117" Height="Auto" Click="WhoLike" Grid.ColumnSpan="2">
+            <materialDesign:PackIcon Kind="QuestionMark" RenderTransformOrigin="0.5,0.5" Height="17" Width="21" />
+        </Button>
+        <Button Margin="151,253,117,81" Height="Auto" Click="WhoDislike" RenderTransformOrigin="0.457,0.35" Grid.ColumnSpan="2">
+            <materialDesign:PackIcon Kind="QuestionMark" RenderTransformOrigin="0.5,0.5" Height="19" Width="16" />
+        </Button>
+
+        <TextBox Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="44" Margin="75,51,0,0" TextWrapping="Wrap" Text="Comments:" VerticalAlignment="Top" Width="266"  FontWeight="Bold" FontSize="22" FontFamily="Verdana" Foreground="#FF15BF2C" BorderThickness="1,0,0,1"/>
+        <Button Content="Like" HorizontalAlignment="Left" Height="26" Margin="34.5,218,0,0" VerticalAlignment="Top" Width="68" Grid.Column="1" Click="AmountOfLikes"/>
+        <Button Content="Dislike" Grid.Column="1" HorizontalAlignment="Left" Margin="36.5,256,0,0" VerticalAlignment="Top" Width="83" Height="27" Click="AmountOfDislikes"/>
+        <TextBox Background="#FF673AB7" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="100.5,218,0,0" TextWrapping="Wrap" x:Name="textLike" VerticalAlignment="Top" Width="50"/>
+        <TextBox Background="#FF673AB7" Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="109.5,258,0,0" TextWrapping="Wrap" x:Name="textDisLike" VerticalAlignment="Top" Width="39" RenderTransformOrigin="0.476,0.607">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.13"/>
+                    <TranslateTransform X="0.001" Y="0.01"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Grid.Column="1" HorizontalAlignment="Left" Margin="75.5,308,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.56,0.719" Click="NextPost">
+            <materialDesign:PackIcon Kind="ArrowRight" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="9,305,0,0" VerticalAlignment="Top" Width="75" Click="PreviousComment">
+            <materialDesign:PackIcon Kind="ArrowLeft" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
+        </Button>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,62 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InstProject"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="InstProject.RegisterPage"
+        mc:Ignorable="d"
+        Title="RegisterPage"  Height="666.318" Width="753.023">
+    <Grid Height="641" VerticalAlignment="Top" Margin="0,3,4,-5"
+                                                                                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="406*"/>
+            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="229*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Margin="2,1,-1,0" RenderTransformOrigin="0.5,0.5" Height="634" VerticalAlignment="Top" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="106*"/>
+                <ColumnDefinition Width="81*"/>
+                <ColumnDefinition Width="25*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <RadialGradientBrush RadiusX="-3">
+                    <GradientStop Color="#FFFDB210" Offset="0"/>
+                    <GradientStop Color="#FF155E5A" Offset="0.915"/>
+                </RadialGradientBrush>
+            </Grid.Background>
+
+            <Grid VerticalAlignment="Bottom" Margin="35,0,34.5,150"
+
+                  
+                  Height="331" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="350*"/>
+                    <ColumnDefinition Width="111*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Welcome to the app!" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="135,-53,8,0" FontSize="18" Foreground="#FFA3EC3A" Height="42" Width="207"/>
+                <StackPanel VerticalAlignment="Center" Margin="15,-13" Grid.ColumnSpan="2">
+                    <TextBox x:Name="FirstName" Margin="0,10,0,-5" materialDesign:HintAssist.Hint="First Name" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="50"  />
+                    <TextBox x:Name="SecName" Margin="0,10,0,-5" materialDesign:HintAssist.Hint="Second Name" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="48" />
+                    <ComboBox x:Name="Status" Margin="0,30,0,-5" materialDesign:HintAssist.Hint="Status" FontFamily="Champagne &amp; Limousines" FontSize="18"  Height="56">
+                        <TextBlock><Run Text="Woman"/></TextBlock>
+                        <TextBlock><Run Text="Man"/></TextBlock>
+
+                    </ComboBox>
+                    <TextBox x:Name="NickName" Margin="0,10,0,-5" materialDesign:HintAssist.Hint="Nickname" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="53"/>
+                    <PasswordBox x:Name="Password" Margin="0,10,0,-5" materialDesign:HintAssist.Hint="Password" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="50" />
+                    <PasswordBox x:Name="ConfirmPassword" Margin="0,0,225.5,-5" materialDesign:HintAssist.Hint="Password again" FontFamily="Champagne &amp; Limousines" FontSize="18" Height="60" />
+                </StackPanel>
+            </Grid>
+            <Button Background="#FF5731BA"  Width="213" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="259,0,183.5,67" Content="REGISTER" Click="Register" Height="42" FontSize="18" BorderBrush="#FF4C17A9" Grid.ColumnSpan="2" />
+            <!--<Button HorizontalAlignment="Right" VerticalAlignment="Top"  >
+                <materialDesign:PackIcon Kind="Power" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" >
+
+                </materialDesign:PackIcon>
+            </Button>-->
+        </Grid>
+
+    </Grid>
+</Window>
