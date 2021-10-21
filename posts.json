@@ -1,0 +1,330 @@
+[{
+  "_id": {
+    "$oid": "61570d87a60cdb41dcd1d7fb"
+  },
+  "Description": "aas",
+  "Date": "01.10.2021 16:30:47",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "julia",
+    "helga"
+  ],
+  "PersonsWhoDisLike": []
+},{
+  "_id": {
+    "$oid": "61570dc8a60cdb41dcd1d7fd"
+  },
+  "Description": "bbd",
+  "Date": "01.10.2021 16:31:52",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "AmountOfDislikes": 1,
+  "PersonsWhoDisLike": [
+    "julia"
+  ],
+  "PersonsWhoLike": [
+    "helga",
+    "yara"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b07a492e2f7fd5b68b6a"
+  },
+  "Description": "new post",
+  "Date": "02.10.2021 22:18:18",
+  "AmountOfLikes": 3,
+  "OwnerPostId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "AmountOfDislikes": 1,
+  "PersonsWhoLike": [
+    "andriy",
+    "ivan",
+    "yara"
+  ],
+  "PersonsWhoDisLike": [
+    "pitr"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b142d02a6aab700255c6"
+  },
+  "Description": "hi i'm Andrew",
+  "Date": "02.10.2021 22:21:38",
+  "AmountOfLikes": 3,
+  "OwnerPostId": {
+    "$oid": "5ebd2d51706e5b42e88e040d"
+  },
+  "AmountOfDislikes": 2,
+  "PersonsWhoLike": [
+    "andriy",
+    "yara",
+    "ira"
+  ],
+  "PersonsWhoDisLike": [
+    "pitr",
+    "danya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b2cdc4414ffced9c38c2"
+  },
+  "Description": "hi i'm yara",
+  "Date": "02.10.2021 22:28:13",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "615821b3eb2fa8548e5a9d19"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "yara"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b2dac4414ffced9c38c3"
+  },
+  "Description": "hi there!",
+  "Date": "02.10.2021 22:28:26",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "615821b3eb2fa8548e5a9d19"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "yara",
+    "anya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b35dc4414ffced9c38c5"
+  },
+  "Description": "i am Ivan",
+  "Date": "02.10.2021 22:30:37",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "5ebd2c58706e5b430cc7041d"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "ivan",
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b366c4414ffced9c38c6"
+  },
+  "Description": "hello",
+  "Date": "02.10.2021 22:30:46",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "5ebd2c58706e5b430cc7041d"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "ivan",
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b5de442a53c66c6c39f8"
+  },
+  "Description": "i'm helga",
+  "Date": "02.10.2021 22:41:18",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b5ef442a53c66c6c39f9"
+  },
+  "Description": "hi glad to see you",
+  "Date": "02.10.2021 22:41:35",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b81b9f5d272c2da679ab"
+  },
+  "Description": "anya",
+  "Date": "02.10.2021 22:50:51",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "6156de493e54b72e72a65fa8"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "anya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b8219f5d272c2da679ac"
+  },
+  "Description": "anya2",
+  "Date": "02.10.2021 22:50:57",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "6156de493e54b72e72a65fa8"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "anya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b9229f5d272c2da679ad"
+  },
+  "Description": "my post",
+  "Date": "02.10.2021 22:55:14",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "5ebd2c90706e5b3fbcbaeb41"
+  },
+  "AmountOfDislikes": 1,
+  "PersonsWhoLike": [
+    "oleh",
+    "ira",
+    "pitr"
+  ],
+  "PersonsWhoDisLike": [
+    "oleh"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c4316371bbde5eba722b"
+  },
+  "Description": "new",
+  "Date": "02.10.2021 23:42:25",
+  "AmountOfLikes": 2,
+  "OwnerPostId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "pitr",
+    "danya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c64e2e00c6665863c10e"
+  },
+  "Description": "ira's post",
+  "Date": "02.10.2021 23:51:26",
+  "AmountOfLikes": 0,
+  "OwnerPostId": {
+    "$oid": "615821b3eb2fa8548e5a9d18"
+  },
+  "AmountOfDislikes": 0
+},{
+  "_id": {
+    "$oid": "6158c6532e00c6665863c10f"
+  },
+  "Description": "hello",
+  "Date": "02.10.2021 23:51:31",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "615821b3eb2fa8548e5a9d18"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "ira"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c69b2e00c6665863c110"
+  },
+  "Description": "it's pitr",
+  "Date": "02.10.2021 23:52:43",
+  "AmountOfLikes": 0,
+  "OwnerPostId": {
+    "$oid": "6158214feb2fa8548e5a9d15"
+  },
+  "AmountOfDislikes": 1,
+  "PersonsWhoLike": [],
+  "PersonsWhoDisLike": [
+    "pitr"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c6a22e00c6665863c111"
+  },
+  "Description": "hello",
+  "Date": "02.10.2021 23:52:50",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "6158214feb2fa8548e5a9d15"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "pitr"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c6aa2e00c6665863c112"
+  },
+  "Description": "hi it's me",
+  "Date": "02.10.2021 23:52:58",
+  "AmountOfLikes": 0,
+  "OwnerPostId": {
+    "$oid": "6158214feb2fa8548e5a9d15"
+  },
+  "AmountOfDislikes": 0
+},{
+  "_id": {
+    "$oid": "6158c6f62e00c6665863c113"
+  },
+  "Description": "it's danya",
+  "Date": "02.10.2021 23:54:14",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "615821b3eb2fa8548e5a9d17"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoDisLike": [
+    "danya"
+  ],
+  "PersonsWhoLike": [
+    "danya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c72d2e00c6665863c114"
+  },
+  "Description": "second post",
+  "Date": "02.10.2021 23:55:09",
+  "AmountOfLikes": 1,
+  "OwnerPostId": {
+    "$oid": "615821b3eb2fa8548e5a9d17"
+  },
+  "AmountOfDislikes": 0,
+  "PersonsWhoLike": [
+    "danya"
+  ]
+},{
+  "_id": {
+    "$oid": "6158c74e2e00c6665863c115"
+  },
+  "Description": "3rd post",
+  "Date": "02.10.2021 23:55:42",
+  "AmountOfLikes": 0,
+  "OwnerPostId": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "AmountOfDislikes": 0
+}]

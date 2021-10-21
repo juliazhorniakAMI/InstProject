@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "5ebd2d51706e5b42e88e040d"
+  },
+  "FirstName": "Andriy",
+  "LastName": "Zhorniak",
+  "Nick": "andriy",
+  "Gender": "Man",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 22:25:08",
+  "Following": [
+    "oleh",
+    "julia",
+    "ivan",
+    "anya",
+    "yara"
+  ]
+},{
+  "_id": {
+    "$oid": "5ebd2c58706e5b430cc7041d"
+  },
+  "FirstName": "Ivan",
+  "LastName": "Smith",
+  "Nick": "ivan",
+  "Gender": "Man",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "14.07.2021 14:58:54",
+  "Following": [
+    "julia",
+    "oleh"
+  ],
+  "Subscribers": [
+    "oleh",
+    "julia",
+    "andriy",
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "5ebd2c90706e5b3fbcbaeb41"
+  },
+  "FirstName": "Oleh",
+  "LastName": "Zhorniak",
+  "Nick": "oleh",
+  "Gender": "Man",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "14.05.2021 14:58:54",
+  "Following": [
+    "julia"
+  ],
+  "Subscribers": [
+    "julia",
+    "ivan"
+  ]
+},{
+  "_id": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "FirstName": "Yulia",
+  "LastName": "Zhorniak",
+  "Nick": "julia",
+  "Gender": "Woman",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 23:42:28",
+  "Following": [
+    "julia",
+    "oleh"
+  ],
+  "Subscribers": [
+    "oleh",
+    "julia",
+    "yara",
+    "anya",
+    "ira"
+  ]
+},{
+  "_id": {
+    "$oid": "6156de493e54b72e72a65fa8"
+  },
+  "FirstName": "Anya",
+  "LastName": "Zh",
+  "Nick": "anya",
+  "Gender": "Woman",
+  "Password": "79200433817420371210134140782512278823501632312032041084625150644823105238184",
+  "Subscribers": [
+    "andriy",
+    "helga",
+    "yara"
+  ],
+  "Following": [
+    "julia"
+  ],
+  "Date": "02.10.2021 22:52:41"
+},{
+  "_id": {
+    "$oid": "6158214feb2fa8548e5a9d15"
+  },
+  "FirstName": "Petro",
+  "LastName": "Smith",
+  "Nick": "pitr",
+  "Gender": "Man",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 23:53:52",
+  "Following": [
+    "oleh",
+    "julia",
+    "andriy"
+  ],
+  "Subscribers": [
+    "oleh",
+    "julia",
+    "andriy",
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "FirstName": "Olya",
+  "LastName": "Smith",
+  "Nick": "helga",
+  "Gender": "Woman",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 23:56:25",
+  "Following": [
+    "julia",
+    "anya",
+    "ivan",
+    "pitr"
+  ],
+  "Subscribers": [
+    "oleh",
+    "julia",
+    "pitr"
+  ]
+},{
+  "_id": {
+    "$oid": "615821b3eb2fa8548e5a9d17"
+  },
+  "FirstName": "Danylo",
+  "LastName": "Smith",
+  "Nick": "danya",
+  "Gender": "Man",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 23:55:22",
+  "Following": [
+    "oleh",
+    "julia",
+    "andriy",
+    "helga"
+  ],
+  "Subscribers": [
+    "oleh"
+  ]
+},{
+  "_id": {
+    "$oid": "615821b3eb2fa8548e5a9d18"
+  },
+  "FirstName": "Ira",
+  "LastName": "Smith",
+  "Nick": "ira",
+  "Gender": "Woman",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 23:52:26",
+  "Following": [
+    "oleh",
+    "andriy",
+    "julia"
+  ],
+  "Subscribers": [
+    "oleh",
+    "andriy"
+  ]
+},{
+  "_id": {
+    "$oid": "615821b3eb2fa8548e5a9d19"
+  },
+  "FirstName": "Yaryna",
+  "LastName": "Smith",
+  "Nick": "yara",
+  "Gender": "Woman",
+  "Password": "10713417811525552252225157107128782559063877117316423416247297319230822211831359175",
+  "Date": "02.10.2021 22:49:37",
+  "Following": [
+    "oleh",
+    "andriy",
+    "julia",
+    "anya"
+  ],
+  "Subscribers": [
+    "oleh",
+    "andriy",
+    "andriy"
+  ]
+}]

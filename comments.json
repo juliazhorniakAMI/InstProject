@@ -1,0 +1,160 @@
+[{
+  "_id": {
+    "$oid": "61586e15506de4c72f8e3aa0"
+  },
+  "CommentOwnerId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "Description": "nice",
+  "Date": "02.10.2021 17:35:01",
+  "AmountOfLikes": 1,
+  "AmountOfDislikes": 1,
+  "postId": {
+    "$oid": "61570dc8a60cdb41dcd1d7fd"
+  },
+  "PersonsWhoLike": [
+    "yara"
+  ],
+  "PersonsWhoDisLike": [
+    "julia"
+  ]
+},{
+  "_id": {
+    "$oid": "61586e2a9948e02583203a91"
+  },
+  "CommentOwnerId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "Description": "nice",
+  "Date": "02.10.2021 17:35:22",
+  "AmountOfLikes": 0,
+  "AmountOfDislikes": 1,
+  "postId": {
+    "$oid": "61570dc8a60cdb41dcd1d7fd"
+  },
+  "PersonsWhoDisLike": [
+    "julia"
+  ],
+  "PersonsWhoLike": []
+},{
+  "_id": {
+    "$oid": "61586e389948e02583203a92"
+  },
+  "CommentOwnerId": {
+    "$oid": "5ebd2c58706e5b430cc7043d"
+  },
+  "Description": "good",
+  "Date": "02.10.2021 17:35:36",
+  "AmountOfLikes": 1,
+  "AmountOfDislikes": 0,
+  "postId": {
+    "$oid": "61570dc8a60cdb41dcd1d7fd"
+  },
+  "PersonsWhoLike": [
+    "julia"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b10e492e2f7fd5b68b6b"
+  },
+  "CommentOwnerId": {
+    "$oid": "5ebd2d51706e5b42e88e040d"
+  },
+  "Description": "wow",
+  "Date": "02.10.2021 22:20:46",
+  "AmountOfLikes": 2,
+  "AmountOfDislikes": 0,
+  "postId": {
+    "$oid": "6158b07a492e2f7fd5b68b6a"
+  },
+  "PersonsWhoLike": [
+    "andriy",
+    "pitr"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b303c4414ffced9c38c4"
+  },
+  "CommentOwnerId": {
+    "$oid": "615821b3eb2fa8548e5a9d19"
+  },
+  "Description": "wow",
+  "Date": "02.10.2021 22:29:07",
+  "AmountOfLikes": 1,
+  "AmountOfDislikes": 0,
+  "postId": {
+    "$oid": "6158b142d02a6aab700255c6"
+  },
+  "PersonsWhoLike": [
+    "yara"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b37dc4414ffced9c38c7"
+  },
+  "CommentOwnerId": {
+    "$oid": "5ebd2c58706e5b430cc7041d"
+  },
+  "Description": "great",
+  "Date": "02.10.2021 22:31:09",
+  "AmountOfLikes": 0,
+  "AmountOfDislikes": 1,
+  "postId": {
+    "$oid": "6158b07a492e2f7fd5b68b6a"
+  },
+  "PersonsWhoDisLike": [
+    "pitr"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b5fe442a53c66c6c39fa"
+  },
+  "CommentOwnerId": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "Description": "it's my comment",
+  "Date": "02.10.2021 22:41:50",
+  "AmountOfLikes": 1,
+  "AmountOfDislikes": 0,
+  "postId": {
+    "$oid": "6158b5ef442a53c66c6c39f9"
+  },
+  "PersonsWhoLike": [
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b616442a53c66c6c39fb"
+  },
+  "CommentOwnerId": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "Description": "like this",
+  "Date": "02.10.2021 22:42:14",
+  "AmountOfLikes": 1,
+  "AmountOfDislikes": 0,
+  "postId": {
+    "$oid": "61570dc8a60cdb41dcd1d7fd"
+  },
+  "PersonsWhoDisLike": [],
+  "PersonsWhoLike": [
+    "helga"
+  ]
+},{
+  "_id": {
+    "$oid": "6158b667442a53c66c6c39fc"
+  },
+  "CommentOwnerId": {
+    "$oid": "6158218feb2fa8548e5a9d16"
+  },
+  "Description": "nice",
+  "Date": "02.10.2021 22:43:35",
+  "AmountOfLikes": 1,
+  "AmountOfDislikes": 0,
+  "postId": {
+    "$oid": "6158b35dc4414ffced9c38c5"
+  },
+  "PersonsWhoLike": [
+    "helga"
+  ]
+}]
