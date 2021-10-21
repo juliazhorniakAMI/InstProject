@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using InstProject.BLL.Services;
 using InstProject.DAL.Models;
+using InstProject.DAL.Neo4jRepositories;
 using InstProject.DAL.Repositories;
 
 namespace InstProject
@@ -29,7 +30,7 @@ namespace InstProject
          private bool isAnyPosts = true;
         PostServices postServices;
         private User user;
-     
+        Neo4jRep neorep;
         List<Post> posts;
         List<Post> tmpposts;
         UserService services;
@@ -38,6 +39,7 @@ namespace InstProject
         {
             InitializeComponent();
             currentPost = new Post();
+            neorep = new Neo4jRep();
             postServices = new PostServices();
             services = new UserService();
             comservices = new CommentService();
@@ -167,12 +169,14 @@ namespace InstProject
 
         private void WhoComment(object sender, RoutedEventArgs e)
         {
-            /*postServices.GetPersonWhoComment(currentPost.Id)*/
-            ListOfCommentsWindow main = new ListOfCommentsWindow( currentPost.Id)
-            {
-                WindowStartupLocation = WindowStartupLocation.CenterScreen
-            };
-            main.ShowDialog();
+            if (comservices.GetPersonsWhoDisLiked(currentPost.Id) != null || comservices.GetPersonsWhoLiked(currentPost.Id) != null) {
+                ListOfCommentsWindow main = new ListOfCommentsWindow(currentPost.Id)
+                {
+                    WindowStartupLocation = WindowStartupLocation.CenterScreen
+                };
+                main.ShowDialog();
+            }
+          
 
         }
 
@@ -401,5 +405,7 @@ namespace InstProject
             };
             main.ShowDialog();
         }
-    }
+
+     
+        }
 }

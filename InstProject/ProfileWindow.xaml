@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         Height="430.867" Width="1011.915">
     <Grid HorizontalAlignment="Left" Height="430" Margin="5,4,-18.5,-13.5" VerticalAlignment="Top" Width="1009">
- 
+
 
         <Grid.Background>
             <RadialGradientBrush RadiusX="-3">
@@ -47,47 +47,34 @@
         </Button>
         <Button Width="110" Height="30" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="21,0,864,359" Content="Following"  Click="ViewFollowing" Background="#FFB79B3A" Foreground="#DD290808" BorderThickness="2,1,1,0" FontSize="16" RenderTransformOrigin="-1.957,-0.022"/>
         <Button Width="115" Height="32" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="20,0,860,306" Content="Followers"  Click="ViewFollowers" Background="#FFB7A03A" Foreground="#DD280707" BorderThickness="2,1,1,2" FontSize="16"/>
-        <Button Width="95" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="184,0,716,101"    x:Name="btnDislike" Click="AmountOfDislikes" Height="45">
+        <Button Width="67" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="22,0,920,66"    x:Name="btnDislike" Click="AmountOfDislikes" Height="40">
             <materialDesign:PackIcon Kind="DislikeOutline" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
         </Button>
-        <Button Width="62" Height="39" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="508,0,425,60"  Click="WhoComment">
+        <Button Width="62" Height="39" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="161,0,786,13"  Click="WhoComment">
             <materialDesign:PackIcon Kind="QuestionMarkBox" RenderTransformOrigin="0.5,0.5" Height="30" Width="28" />
         </Button>
-        <Button Width="91" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="437,0,467,99"   x:Name="btnComment" Click="AddComment" Height="41">
+        <Button Width="115" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="24,0,870,13"   x:Name="btnComment" Click="AddComment" Height="41">
             <materialDesign:PackIcon Kind="CommentAdd" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" />
         </Button>
-        <Button Width="62" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="296,0,637,58"  Click="WhoDislike">
+        <Button Width="62" Height="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="160,0,787,66"  Click="WhoDislike">
             <materialDesign:PackIcon Kind="QuestionMarkBox" RenderTransformOrigin="0.5,0.5" Height="32" Width="34" />
         </Button>
-        <Button Width="62" Height="39" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="113,0,820,59"  Click="WhoLike">
+        <Button Width="64" Height="41" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="162,0,783,133"  Click="WhoLike">
 
 
             <materialDesign:PackIcon Kind="QuestionMarkBox" RenderTransformOrigin="0.721,0.672" Height="32" Width="34" />
         </Button>
-        <TextBox x:Name="textLike" FontSize="22" Height="46" Margin="88,282,839,0" TextWrapping="Wrap"  TextAlignment="Center" VerticalAlignment="Top" Background="#FF673AB7" RenderTransformOrigin="0.735,0.804" />
 
 
 
-        <TextBox HorizontalAlignment="Left" x:Name="textDisLike" FontSize="22" Height="46" Margin="278,281,0,0" TextWrapping="Wrap"  TextAlignment="Center" VerticalAlignment="Top" Width="62" Background="#FF673AB7" RenderTransformOrigin="0.466,0.446"/>
+
+        <TextBox HorizontalAlignment="Left" x:Name="textDisLike" FontSize="22" Height="42" Margin="77,324,0,0" TextWrapping="Wrap"  TextAlignment="Center" VerticalAlignment="Top" Width="68" Background="#FF673AB7" RenderTransformOrigin="0.466,0.446"/>
 
 
 
-        <Button VerticalAlignment="Bottom" Margin="5,0,910,103"  x:Name="btnLike" Click="AmountOfLikes" Height="43">
-            <materialDesign:PackIcon Kind="LikeOutline" RenderTransformOrigin="0.685,0.5" Height="29" Width="34" HorizontalAlignment="Left" >
-                <materialDesign:PackIcon.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="0.122"/>
-                        <TranslateTransform Y="0.009"/>
-                    </TransformGroup>
-                </materialDesign:PackIcon.RenderTransform>
 
-            </materialDesign:PackIcon>
-
-        </Button>
-        <Button Width="145" Height="44" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="841,0,9,91" Content="Add new Post"  Click="AddNewPost"/>
-        <Button Width="145" Height="42" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="841,0,9,51" Content="Edit Post"  Click="EditPost"/>
+        <Button Width="145" Height="44" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="849,0,15,103" Content="Add new Post"  Click="AddNewPost"/>
+        <Button Width="145" Height="42" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="848,0,16,59" Content="Edit Post"  Click="EditPost"/>
         <Button Width="78" Height="39" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="721,123,196,0" Click="Refresh">
             <materialDesign:PackIcon Kind="Refresh" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" >
 
@@ -96,6 +83,24 @@
         <Button Width="145" Height="44" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="131,0,104,439" Content="Following"  Click="ViewFollowing" Background="#FFB79B3A" Foreground="#DD290808" BorderThickness="2,1,1,0" FontSize="16"/>
         <Button Width="145" Height="45" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="288,0,2,437" Content="Followers"  Click="ViewFollowers" Grid.ColumnSpan="2" Background="#FFB7A03A" Foreground="#DD280707" BorderThickness="2,1,1,2" FontSize="16"/>
 
+
         <Button Width="144" Height="44" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="842,0,9,17" Content="Delete Post"  Click="DeletePost"/>
+        <Canvas HorizontalAlignment="Left" Height="48" Margin="26,254,0,0" VerticalAlignment="Top" Width="210">
+            <Button VerticalAlignment="Bottom"  x:Name="btnLike" Click="AmountOfLikes" Height="40" Canvas.Left="-2" Canvas.Top="3" Width="75">
+                <materialDesign:PackIcon Kind="LikeOutline" RenderTransformOrigin="0.685,0.5" Height="29" Width="34" HorizontalAlignment="Left" >
+                    <materialDesign:PackIcon.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="0.122"/>
+                            <TranslateTransform Y="0.009"/>
+                        </TransformGroup>
+                    </materialDesign:PackIcon.RenderTransform>
+
+                </materialDesign:PackIcon>
+
+            </Button>
+            <TextBox x:Name="textLike" FontSize="22" Height="41" TextWrapping="Wrap"  TextAlignment="Center" VerticalAlignment="Top" Background="#FF673AB7" RenderTransformOrigin="0.735,0.804" Canvas.Left="56" Canvas.Top="3" Width="66" />
+        </Canvas>
     </Grid>
 </UserControl>

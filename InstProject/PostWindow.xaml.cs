@@ -222,11 +222,15 @@ namespace InstProject
         }
         private void WhoComment(object sender, RoutedEventArgs e)
         {
-            ListOfCommentsWindow main = new ListOfCommentsWindow(currentPost.Id)
+            if (comservices.GetPersonsWhoDisLiked(currentPost.Id) != null || comservices.GetPersonsWhoLiked(currentPost.Id) != null)
             {
-                WindowStartupLocation = WindowStartupLocation.CenterScreen
-            };
-            main.ShowDialog();
+                ListOfCommentsWindow main = new ListOfCommentsWindow(currentPost.Id)
+                {
+                    WindowStartupLocation = WindowStartupLocation.CenterScreen
+                };
+                main.ShowDialog();
+            }
+
 
         }
 

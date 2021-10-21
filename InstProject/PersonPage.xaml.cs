@@ -43,10 +43,15 @@ namespace InstProject
             services = new UserService();
             postServices = new PostServices();
             comservices = new CommentService();
-
+       
             //
             user = new User();
             user = services.GetUser(id);
+            btnConnection.Content = services.GetShortestPathNumber(user.Nick);
+            if (btnConnection.Content.ToString() == " ")
+            {
+                btnConnection.Content = "No connection";
+            }
             Nam.Content = user.FirstName;
             Surname.Content = user.LastName;
             NickName.Content = user.Nick;
@@ -100,7 +105,7 @@ namespace InstProject
 
                 MessageBox.Show("you already follow this user");
             }
-
+            btnConnection.Content = services.GetShortestPathNumber(user.Nick);
         }
 
         private void Unfollow(object sender, RoutedEventArgs e)
@@ -121,7 +126,7 @@ namespace InstProject
                 MessageBox.Show("you already unfollow this user");
             }
 
-
+            btnConnection.Content = services.GetShortestPathNumber(user.Nick);
         }
 
     private void AddComment(object sender, RoutedEventArgs e)
@@ -216,11 +221,15 @@ namespace InstProject
 
         private void WhoComment(object sender, RoutedEventArgs e)
         {
-            ListOfCommentsWindow main = new ListOfCommentsWindow(currentPost.Id)
+            if (comservices.GetPersonsWhoDisLiked(currentPost.Id) != null || comservices.GetPersonsWhoLiked(currentPost.Id) != null)
             {
-                WindowStartupLocation = WindowStartupLocation.CenterScreen
-            };
-            main.ShowDialog();
+                ListOfCommentsWindow main = new ListOfCommentsWindow(currentPost.Id)
+                {
+                    WindowStartupLocation = WindowStartupLocation.CenterScreen
+                };
+                main.ShowDialog();
+            }
+
 
         }
 

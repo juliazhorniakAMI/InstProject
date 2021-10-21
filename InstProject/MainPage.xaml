@@ -46,7 +46,11 @@
 
             </Button>
         </Grid>
+        <Button Width="60" Height="42" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Margin="24,0,468,547"   Click="DeleteAcc">
+            <materialDesign:PackIcon Kind="BinEmpty" RenderTransformOrigin="0.5,0.5" Height="29" Width="27" >
 
+            </materialDesign:PackIcon>
+        </Button>
         <Grid  x:Name="GridPrincipal" Margin="8,58,0,76" Grid.ColumnSpan="2">
          
 

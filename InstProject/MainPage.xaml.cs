@@ -20,17 +20,12 @@ namespace InstProject
     /// </summary>
     public partial class MainPage : Window
     {
+        UserService serv;
         public MainPage()
         {
-            //foreach (UIElement el in GridPrincipal.Children)
-            //{
-            //    if (el is Button)
-            //    {
-            //        ((Button)el).Click += Button_Click;
-            //    }
-            //}
+            serv = new UserService();
 
-       
+
             InitializeComponent();
        
         }
@@ -56,7 +51,14 @@ namespace InstProject
                GridPrincipal.Children.Add(new FindWindow());
             }
         }
+        private void DeleteAcc(object sender, RoutedEventArgs e)
+        {
+            serv.DeleteUser();
+            LoginPage main = new LoginPage();
+            main.Show();
+            Hide();
 
+        }
         private void CLOSE(object sender, RoutedEventArgs e)
         {
             UserService services = new UserService();

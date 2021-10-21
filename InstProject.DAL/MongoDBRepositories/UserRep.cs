@@ -59,7 +59,9 @@ namespace InstProject.DAL.Repositories
         }
 
 
-    
+        public void Delete(ObjectId userId) =>
+             collection.DeleteOne(u => u.Id == userId);
+
 
         public void UpdateField(string nickname, string FieldToEdit, string FieldValue)
         {
